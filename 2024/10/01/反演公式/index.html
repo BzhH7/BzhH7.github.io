@@ -1,26 +1,26 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>反演公式 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="###反演 首先讲一下什么是反演，定义两个序列 $|F(n)|,|f(n)|$,$F_i&#x3D;\alpha(i)f(i)$,表示|F(n)|与|f(n)|之间满足某种关系, 我们需要求得 $|f(n)|$,那么就可以通过反演公式求得 $f(i)&#x3D;\beta(i)F(i)$. ###莫比乌斯反演 首先引入个函数, 莫比乌斯函数,记作 $\mu(x)$,令 $x&#x3D;p_1^{a">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>反演公式 | BzhH</title><meta name="author" content="Hhha"><meta name="copyright" content="Hhha"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="反演首先讲一下什么是反演，定义两个序列 $|F(n)|,|f(n)|$,$F_i&#x3D;\alpha(i)f(i)$,表示|F(n)|与|f(n)|之间满足某种关系, 我们需要求得 $|f(n)|$,那么就可以通过反演公式求得 $f(i)&#x3D;\beta(i)F(i)$. 莫比乌斯反演首先引入个函数, 莫比乌斯函数,记作 $\mu(x)$,令 $x&#x3D;p_1^{a_1}p_2^{a_2}…p_k^{a_k}$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反演公式">
 <meta property="og:url" content="http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="###反演 首先讲一下什么是反演，定义两个序列 $|F(n)|,|f(n)|$,$F_i&#x3D;\alpha(i)f(i)$,表示|F(n)|与|f(n)|之间满足某种关系, 我们需要求得 $|f(n)|$,那么就可以通过反演公式求得 $f(i)&#x3D;\beta(i)F(i)$. ###莫比乌斯反演 首先引入个函数, 莫比乌斯函数,记作 $\mu(x)$,令 $x&#x3D;p_1^{a">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="BzhH">
+<meta property="og:description" content="反演首先讲一下什么是反演，定义两个序列 $|F(n)|,|f(n)|$,$F_i&#x3D;\alpha(i)f(i)$,表示|F(n)|与|f(n)|之间满足某种关系, 我们需要求得 $|f(n)|$,那么就可以通过反演公式求得 $f(i)&#x3D;\beta(i)F(i)$. 莫比乌斯反演首先引入个函数, 莫比乌斯函数,记作 $\mu(x)$,令 $x&#x3D;p_1^{a_1}p_2^{a_2}…p_k^{a_k}$">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2024-10-01T02:53:38.440Z">
 <meta property="article:modified_time" content="2024-10-01T02:53:48.670Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Hhha">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: undefined,
   noticeOutdate: undefined,
   highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
-    success: 'Copy Successful',
-    error: 'Copy Error',
-    noSupport: 'Browser Not Supported'
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
   },
   relativeDate: {
     homepage: false,
@@ -28,18 +28,18 @@
   },
   runtime: '',
   dateSuffix: {
-    just: 'Just now',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
   },
   copyright: undefined,
   lightbox: 'fancybox',
   Snackbar: undefined,
   infinitegrid: {
     js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
-    buttonText: 'Load More'
+    buttonText: '加载更多'
   },
   isPhotoFigcaption: false,
   islazyload: false,
@@ -54,7 +54,7 @@
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
-  isToc: false,
+  isToc: true,
   postUpdate: '2024-10-01 10:53:48'
 }</script><script>(win=>{
       win.saveToLocal = {
@@ -129,7 +129,7 @@
       win.activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
       const t = saveToLocal.get('theme')
@@ -152,45 +152,61 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">反演公式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-01T02:53:38.440Z" title="Created 2024-10-01 10:53:38">2024-10-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-01T02:53:48.670Z" title="Updated 2024-10-01 10:53:48">2024-10-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="反演公式"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>###反演</p>
-<p>首先讲一下什么是反演，定义两个序列 $|F(n)|,|f(n)|$,$F_i&#x3D;\alpha(i)f(i)$,表示|F(n)|与|f(n)|之间满足某种关系,</p>
-<p>我们需要求得 $|f(n)|$,那么就可以通过反演公式求得 $f(i)&#x3D;\beta(i)F(i)$.</p>
-<p>###莫比乌斯反演</p>
-<p>首先引入个函数, 莫比乌斯函数,记作 $\mu(x)$,令 $x&#x3D;p_1^{a_1}p_2^{a_2}…p_k^{a_k}$,该函数有三种取值</p>
-<p>$$\mu&#x3D;\begin{cases}0,a_i \ge 2\1,k \mod 2 &#x3D; 0\-1,k \mod 2 \ne 0\end{cases}$$</p>
-<p>令 $S(x)&#x3D;\sum\limits_{i|x}^{x}\mu(i),S(x)&#x3D;\begin{cases}1,x&#x3D;1\0,x&gt;1\end{cases}$</p>
-<p><em><strong>证明</strong></em></p>
+    })(window)</script><link rel="stylesheet" href="/self/css/myStyle.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/banner.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="BzhH"><span class="site-name">BzhH</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">反演公式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-01T02:53:38.440Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-01T02:53:48.670Z" title="更新于 2024-10-01 10:53:48">2024-10-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="反演公式"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/" itemprop="commentCount"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="反演"><a href="#反演" class="headerlink" title="反演"></a>反演</h3><p>首先讲一下什么是反演，定义两个序列 $|F(n)|,|f(n)|$,$F_i=\alpha(i)f(i)$,表示|F(n)|与|f(n)|之间满足某种关系,</p>
+<p>我们需要求得 $|f(n)|$,那么就可以通过反演公式求得 $f(i)=\beta(i)F(i)$.</p>
+<h3 id="莫比乌斯反演"><a href="#莫比乌斯反演" class="headerlink" title="莫比乌斯反演"></a>莫比乌斯反演</h3><p>首先引入个函数, 莫比乌斯函数,记作 $\mu(x)$,令 $x=p_1^{a_1}p_2^{a_2}…p_k^{a_k}$,该函数有三种取值</p>
+<script type="math/tex; mode=display">\mu=\begin{cases}0,a_i \ge 2\\1,k \mod 2 = 0\\-1,k \mod 2 \ne 0\end{cases}</script><p>令 $S(x)=\sum\limits_{i|x}^{x}\mu(i),S(x)=\begin{cases}1,x=1\0,x&gt;1\end{cases}$</p>
+<p><strong><em>证明</em></strong></p>
 <p>对于 $x$ 与 $x$ 的任意一个约数 $t$,有</p>
-<p>$$x&#x3D;p_1^{a_1}p_2^{a_2}…p_k^{a_k}$$</p>
-<p>$$t&#x3D;p_1^{b_1}p_2^{b_2}…p_k^{b^k},0\le b_i \le a_i$$</p>
-<p>对于任意一个含有大于2的指数的约数,我们可以不考虑,因为它对 $S(x)$ 无影响,那么我们就可以得到 $b_i&#x3D;0,1$</p>
-<p>于是就有$S(x)&#x3D;C_k^0 (-1)^0+C_k^1 (-1)^1+…+C_k^k (-1)^k$</p>
-<p>根据二项式定理$(a+b)^k&#x3D;C_k^0 a^k b_0+C_k^1 a^{k-1} b_1+…+C_k^k a_0 b_k$</p>
-<p>得到$S(x)&#x3D;(1-1)^k&#x3D;0$</p>
-<p><em><strong>证毕</strong></em></p>
-<p>若 $F(n)&#x3D;\sum\limits_{d|n} f(d)$,则 $f(n)&#x3D;\sum\limits_{d|n} \mu(d)F({\frac{n}{d}})$</p>
-<p><em><strong>证明</strong></em></p>
-<p>$$\sum\limits_{d|n} \mu(d)F_{\frac{n}{d}} &#x3D; \sum\limits_{d|n} {\mu(d)\sum\limits_{i|\frac{n}{d}} f(i)}$$</p>
-<p>考虑交换一下枚举的顺序, $i|\frac{n}{d} \Rightarrow i|n$, $i|\frac{n}{d} \Rightarrow d|\frac{n}{i}$</p>
-<p>得到 $\sum\limits_{d|n} {\mu(d)\sum\limits_{i|\frac{n}{d}} f(i)} &#x3D; \sum\limits_{i|n} f(i)\sum\limits_{d|\frac{n}{i}} \mu(d)$</p>
+<script type="math/tex; mode=display">x=p_1^{a_1}p_2^{a_2}...p_k^{a_k}</script><script type="math/tex; mode=display">t=p_1^{b_1}p_2^{b_2}...p_k^{b^k},0\le b_i \le a_i</script><p>对于任意一个含有大于2的指数的约数,我们可以不考虑,因为它对 $S(x)$ 无影响,那么我们就可以得到 $b_i=0,1$</p>
+<p>于是就有$S(x)=C_k^0 (-1)^0+C_k^1 (-1)^1+…+C_k^k (-1)^k$</p>
+<p>根据二项式定理$(a+b)^k=C_k^0 a^k b_0+C_k^1 a^{k-1} b_1+…+C_k^k a_0 b_k$</p>
+<p>得到$S(x)=(1-1)^k=0$</p>
+<p><strong><em>证毕</em></strong></p>
+<p>若 $F(n)=\sum\limits<em>{d|n} f(d)$,则 $f(n)=\sum\limits</em>{d|n} \mu(d)F({\frac{n}{d}})$</p>
+<p><strong><em>证明</em></strong></p>
+<script type="math/tex; mode=display">\sum\limits_{d|n} \mu(d)F_{\frac{n}{d}} = \sum\limits_{d|n} {\mu(d)\sum\limits_{i|\frac{n}{d}} f(i)}</script><p>考虑交换一下枚举的顺序, $i|\frac{n}{d} \Rightarrow i|n$, $i|\frac{n}{d} \Rightarrow d|\frac{n}{i}$</p>
+<p>得到 $\sum\limits<em>{d|n} {\mu(d)\sum\limits</em>{i|\frac{n}{d}} f(i)} = \sum\limits<em>{i|n} f(i)\sum\limits</em>{d|\frac{n}{i}} \mu(d)$</p>
 <p>仔细观察一下 $\sum\limits_{d|\frac{n}{i}} \mu(d)$,就等于 $S(\frac{n}{i})$</p>
-<p>所以,当 $i &#x3D; n$时, $\sum\limits_{d|n} \mu(d)F_{\frac{n}{d}} &#x3D; f(i)$</p>
-<p><em><strong>证毕</strong></em></p>
+<p>所以,当 $i = n$时, $\sum\limits<em>{d|n} \mu(d)F</em>{\frac{n}{d}} = f(i)$</p>
+<p><strong><em>证毕</em></strong></p>
 <p>关于莫比乌斯反演的另一种形式</p>
-<p>若$F(n)&#x3D;\sum\limits_{n|d}^\infty f(d)$,则 $f_n&#x3D;\sum\limits_{n|d}^\infty \mu{\frac{d}{n}}F(d)$</p>
-<p>证明过程与上面大同小异,令 $d&#96;&#x3D;\frac{d}{n}$</p>
-<p>$$f(n)&#x3D;\sum\limits_{n|d}^\infty \mu{d<code>&#125; \sum\limits_&#123;d|i&#125;^\infty f(i)\\=\sum\limits_&#123;n|i&#125;^\infty f(i) \sum\limits_&#123;d</code>|\frac{i}{n}}^\infty \mu{d&#96;}&#x3D;f(i)$$</p>
-<p>###二项式反演</p>
-<p>$$f(n)&#x3D;\sum\limits_{i&#x3D;0}^nC^i_n g(i)\Leftrightarrow g(n)&#x3D;\sum\limits_{i&#x3D;0}^n(−1)^{n−i}C^i_nf(i)$$</p>
-<p><em><strong>证明</strong></em></p>
-<p>$$\sum\limits_{i&#x3D;0}^n (-1)^{n-i}C_n^i f(i)&#x3D;\sum\limits_{i&#x3D;0}^n (-1)^{n-i}C_n^i \sum\limits_{j&#x3D;0}^i C^j_i g(j)\&#x3D;\sum\limits_{i&#x3D;0}^n \sum\limits_{j&#x3D;0}^i (-1)^{n-i}C_n^iC_i^j g(j)$$</p>
-<p>$$C_n^iC_i^j&#x3D;\frac{n!}{i!(n-i)!}\frac{i!}{j!(i-j)!}&#x3D;\frac{n!}{j!(n-j)!}\frac{(n-j)!}{(n-i)!(i-j)!}&#x3D;C_n^jC_{n-j}^{n-i}\\Rightarrow \sum\limits_{i&#x3D;0}^n (-1)^{n-i}C_n^i f(i)&#x3D;\sum\limits_{i&#x3D;0}^n \sum\limits_{j&#x3D;0}^i (-1)^{n-i}C_n^jC_{n-j}^{n-i} g(j)$$</p>
-<p>交换一下循环顺序</p>
-<p>$$\sum\limits_{i&#x3D;0}^n \sum\limits_{j&#x3D;0}^i (-1)^{n-i}C_n^jC_{n-j}^{n-i} g(j)&#x3D;\sum\limits_{j&#x3D;0}^n \sum\limits_{i&#x3D;j}^n(-1)^{n-i}C_n^jC_{n-j}^{n-i} g(j)&#x3D;\sum\limits_{j&#x3D;0}^n C_n^jg(j)\sum\limits_{i&#x3D;j}^n(-1)^{n-i}C_{n-j}^{n-i}$$</p>
-<p>我们着眼于 $\sum\limits_{i&#x3D;j}^n (-1)^{n-i}C_{n-j}^{n-i}&#x3D;\sum\limits_{k&#x3D;0}^{n-j} (-1)^kC_{n-j}^k$</p>
-<p>若 $n-j\ne 0$,根据二项式定理$\sum\limits_{k&#x3D;0}^{n-j} (-1)^kC_{n-j}^k&#x3D;(1-1)^{n-j}&#x3D;0$</p>
-<p>若 $n-j&#x3D;0 \Rightarrow \sum\limits_{k&#x3D;0}^{n-j} (-1)^kC_{n-j}^k&#x3D;(1-1)^{n-j}&#x3D;(-1)^0C_0^0&#x3D;1$ </p>
-<p>则只有当 $j&#x3D;n$ 时, $\sum\limits_{i&#x3D;0}^n (-1)^{n-i}C_n^i f(i)&#x3D;g(j)$ </p>
-<p><em><strong>证毕</strong></em></p>
-<p>另一种形式 $f(k)&#x3D;\sum\limits_{i&#x3D;k}^n C_i^kg(i) \Leftrightarrow g(k)&#x3D;\sum\limits_{i&#x3D;k}^n (-1)^{i-k}C_i^kf(i)$</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/">http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/10/01/%E9%A2%98%E8%A7%A3P4026%20%5BSHOI2008%5D%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%80%BA%E5%8A%A1/" title="题解P4026 [SHOI2008]循环的债务"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">题解P4026 [SHOI2008]循环的债务</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/01/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95P2664%20%E6%A0%91%E4%B8%8A%E6%B8%B8%E6%88%8F/" title="做题记录P2664 树上游戏"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">做题记录P2664 树上游戏</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="GJK算法">GJK算法</a><time datetime="2024-10-01T02:53:38.485Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="虚树DP">虚树DP</a><time datetime="2024-10-01T02:53:38.484Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="题解 平方和">题解 平方和</a><time datetime="2024-10-01T02:53:38.484Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="关于pb_ds库的一些使用">关于pb_ds库的一些使用</a><time datetime="2024-10-01T02:53:38.483Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="题解[SCOI2009]最长距离">题解[SCOI2009]最长距离</a><time datetime="2024-10-01T02:53:38.483Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+<p>若$F(n)=\sum\limits<em>{n|d}^\infty f(d)$,则 $f_n=\sum\limits</em>{n|d}^\infty \mu{\frac{d}{n}}F(d)$</p>
+<p>证明过程与上面大同小异,令 $d`=\frac{d}{n}$</p>
+<script type="math/tex; mode=display">f(n)=\sum\limits_{n|d}^\infty \mu{d`} \sum\limits_{d|i}^\infty f(i)\\=\sum\limits_{n|i}^\infty f(i) \sum\limits_{d`|\frac{i}{n}}^\infty \mu{d`}=f(i)</script><h3 id="二项式反演"><a href="#二项式反演" class="headerlink" title="二项式反演"></a>二项式反演</h3><script type="math/tex; mode=display">f(n)=\sum\limits_{i=0}^nC^i_n g(i)\Leftrightarrow g(n)=\sum\limits_{i=0}^n(−1)^{n−i}C^i_nf(i)</script><p><strong><em>证明</em></strong></p>
+<script type="math/tex; mode=display">\sum\limits_{i=0}^n (-1)^{n-i}C_n^i f(i)=\sum\limits_{i=0}^n (-1)^{n-i}C_n^i \sum\limits_{j=0}^i C^j_i g(j)\\=\sum\limits_{i=0}^n \sum\limits_{j=0}^i (-1)^{n-i}C_n^iC_i^j g(j)</script><script type="math/tex; mode=display">C_n^iC_i^j=\frac{n!}{i!(n-i)!}\frac{i!}{j!(i-j)!}=\frac{n!}{j!(n-j)!}\frac{(n-j)!}{(n-i)!(i-j)!}=C_n^jC_{n-j}^{n-i}\\\Rightarrow \sum\limits_{i=0}^n (-1)^{n-i}C_n^i f(i)=\sum\limits_{i=0}^n \sum\limits_{j=0}^i (-1)^{n-i}C_n^jC_{n-j}^{n-i} g(j)</script><p>交换一下循环顺序</p>
+<script type="math/tex; mode=display">\sum\limits_{i=0}^n \sum\limits_{j=0}^i (-1)^{n-i}C_n^jC_{n-j}^{n-i} g(j)=\sum\limits_{j=0}^n \sum\limits_{i=j}^n(-1)^{n-i}C_n^jC_{n-j}^{n-i} g(j)=\sum\limits_{j=0}^n C_n^jg(j)\sum\limits_{i=j}^n(-1)^{n-i}C_{n-j}^{n-i}</script><p>我们着眼于 $\sum\limits<em>{i=j}^n (-1)^{n-i}C</em>{n-j}^{n-i}=\sum\limits<em>{k=0}^{n-j} (-1)^kC</em>{n-j}^k$</p>
+<p>若 $n-j\ne 0$,根据二项式定理$\sum\limits<em>{k=0}^{n-j} (-1)^kC</em>{n-j}^k=(1-1)^{n-j}=0$</p>
+<p>若 $n-j=0 \Rightarrow \sum\limits<em>{k=0}^{n-j} (-1)^kC</em>{n-j}^k=(1-1)^{n-j}=(-1)^0C_0^0=1$ </p>
+<p>则只有当 $j=n$ 时, $\sum\limits_{i=0}^n (-1)^{n-i}C_n^i f(i)=g(j)$ </p>
+<p><strong><em>证毕</em></strong></p>
+<p>另一种形式 $f(k)=\sum\limits<em>{i=k}^n C_i^kg(i) \Leftrightarrow g(k)=\sum\limits</em>{i=k}^n (-1)^{i-k}C_i^kf(i)$</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Hhha</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/">http://example.com/2024/10/01/%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">BzhH</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/10/01/%E9%A2%98%E8%A7%A3P4026%20%5BSHOI2008%5D%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%80%BA%E5%8A%A1/" title="题解P4026 [SHOI2008]循环的债务"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">题解P4026 [SHOI2008]循环的债务</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/01/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95P2664%20%E6%A0%91%E4%B8%8A%E6%B8%B8%E6%88%8F/" title="做题记录P2664 树上游戏"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">做题记录P2664 树上游戏</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hhha</div><div class="author-info__description">形而上学，不行退学</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E6%BC%94"><span class="toc-number">1.</span> <span class="toc-text">反演</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94"><span class="toc-number">2.</span> <span class="toc-text">莫比乌斯反演</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94"><span class="toc-number">3.</span> <span class="toc-text">二项式反演</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="GJK算法">GJK算法</a><time datetime="2024-10-01T02:53:38.485Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="虚树DP">虚树DP</a><time datetime="2024-10-01T02:53:38.484Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="题解 平方和">题解 平方和</a><time datetime="2024-10-01T02:53:38.484Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="关于pb_ds库的一些使用">关于pb_ds库的一些使用</a><time datetime="2024-10-01T02:53:38.483Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="题解[SCOI2009]最长距离">题解[SCOI2009]最长距离</a><time datetime="2024-10-01T02:53:38.483Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Hhha</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

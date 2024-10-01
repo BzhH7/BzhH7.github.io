@@ -1,26 +1,26 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>欧拉定理及扩展欧拉定理 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="###欧拉定理 $\foralla,m \in Z^+$,若$\gcd(a,m)&#x3D;1$,则$a^{\phi(m)} \equiv 1(modm)$ 假设这$\phi(m)$个数为$X_1,X_2,…,X_{\phi(m)}$ 引理1 $X_i$两两模$m$不同余 证明 $\forall 1\le i,j \le \phi(m)$且$i \ne j$,那么 $$X_imodm &#x3D;">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>欧拉定理及扩展欧拉定理 | BzhH</title><meta name="author" content="Hhha"><meta name="copyright" content="Hhha"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="欧拉定理$\forall~a,m \in Z^+$,若$\gcd(a,m)&#x3D;1$,则$a^{\phi(m)} \equiv 1(mod~m)$ 假设这$\phi(m)$个数为$X1,X_2,…,X{\phi(m)}$ 引理1 $X_i$两两模$m$不同余 证明 $\forall 1\le i,j \le \phi(m)$且$i \ne j$,那么 X_i~mod~m &#x3D; X_i \ne X_j &#x3D;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="欧拉定理及扩展欧拉定理">
 <meta property="og:url" content="http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="###欧拉定理 $\foralla,m \in Z^+$,若$\gcd(a,m)&#x3D;1$,则$a^{\phi(m)} \equiv 1(modm)$ 假设这$\phi(m)$个数为$X_1,X_2,…,X_{\phi(m)}$ 引理1 $X_i$两两模$m$不同余 证明 $\forall 1\le i,j \le \phi(m)$且$i \ne j$,那么 $$X_imodm &#x3D;">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="BzhH">
+<meta property="og:description" content="欧拉定理$\forall~a,m \in Z^+$,若$\gcd(a,m)&#x3D;1$,则$a^{\phi(m)} \equiv 1(mod~m)$ 假设这$\phi(m)$个数为$X1,X_2,…,X{\phi(m)}$ 引理1 $X_i$两两模$m$不同余 证明 $\forall 1\le i,j \le \phi(m)$且$i \ne j$,那么 X_i~mod~m &#x3D; X_i \ne X_j &#x3D;">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2024-10-01T02:53:38.438Z">
 <meta property="article:modified_time" content="2024-10-01T02:53:48.673Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Hhha">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: undefined,
   noticeOutdate: undefined,
   highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
-    success: 'Copy Successful',
-    error: 'Copy Error',
-    noSupport: 'Browser Not Supported'
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
   },
   relativeDate: {
     homepage: false,
@@ -28,18 +28,18 @@
   },
   runtime: '',
   dateSuffix: {
-    just: 'Just now',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
   },
   copyright: undefined,
   lightbox: 'fancybox',
   Snackbar: undefined,
   infinitegrid: {
     js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
-    buttonText: 'Load More'
+    buttonText: '加载更多'
   },
   isPhotoFigcaption: false,
   islazyload: false,
@@ -54,7 +54,7 @@
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
-  isToc: false,
+  isToc: true,
   postUpdate: '2024-10-01 10:53:48'
 }</script><script>(win=>{
       win.saveToLocal = {
@@ -129,7 +129,7 @@
       win.activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
       const t = saveToLocal.get('theme')
@@ -152,63 +152,79 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">欧拉定理及扩展欧拉定理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-01T02:53:38.438Z" title="Created 2024-10-01 10:53:38">2024-10-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-01T02:53:48.673Z" title="Updated 2024-10-01 10:53:48">2024-10-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="欧拉定理及扩展欧拉定理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>###欧拉定理</p>
-<p>$\forall<del>a,m \in Z^+$,若$\gcd(a,m)&#x3D;1$,则$a^{\phi(m)} \equiv 1(mod</del>m)$</p>
-<p>假设这$\phi(m)$个数为$X_1,X_2,…,X_{\phi(m)}$</p>
+    })(window)</script><link rel="stylesheet" href="/self/css/myStyle.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/banner.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="BzhH"><span class="site-name">BzhH</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">欧拉定理及扩展欧拉定理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-01T02:53:38.438Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-01T02:53:48.673Z" title="更新于 2024-10-01 10:53:48">2024-10-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="欧拉定理及扩展欧拉定理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/" itemprop="commentCount"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a>欧拉定理</h3><p>$\forall~a,m \in Z^+$,若$\gcd(a,m)=1$,则$a^{\phi(m)} \equiv 1(mod~m)$</p>
+<p>假设这$\phi(m)$个数为$X<em>1,X_2,…,X</em>{\phi(m)}$</p>
 <p><strong>引理1 $X_i$两两模$m$不同余</strong></p>
 <p><strong>证明</strong></p>
 <p>$\forall 1\le i,j \le \phi(m)$且$i \ne j$,那么</p>
-<p>$$X_i<del>mod</del>m &#x3D; X_i \ne X_j &#x3D; X_j<del>mod</del>m$$</p>
-<p>$$X_i \not\equiv X_j (mod~m)$$</p>
-<p><strong>证毕</strong></p>
-<p>设 $p_i&#x3D;a\times X_i$</p>
+<script type="math/tex; mode=display">X_i~mod~m = X_i \ne X_j = X_j~mod~m</script><script type="math/tex; mode=display">X_i \not\equiv X_j (mod~m)</script><p><strong>证毕</strong></p>
+<p>设 $p_i=a\times X_i$</p>
 <p><strong>引理2 $p_i$ 之间两两模 $m$ 不同余</strong></p>
 <p><strong>证明</strong></p>
 <p>$\forall 1\le i,j \le \phi(m)$且$i \ne j$</p>
 <p>假设 $p_i$ 与 $p_j$ 同余,那么</p>
-<p>$$a \times X_i \equiv a \times X_j (mod~m)$$</p>
-<p>$$\because \gcd(a, m) &#x3D; 1$$</p>
-<p>$$\therefore X_i \equiv X_j (mod~m)$$</p>
-<p>矛盾,故$p_i \not\equiv p_j (mod~m)$</p>
+<script type="math/tex; mode=display">a \times X_i \equiv a \times X_j (mod~m)</script><script type="math/tex; mode=display">\because \gcd(a, m) = 1</script><script type="math/tex; mode=display">\therefore X_i \equiv X_j (mod~m)</script><p>矛盾,故$p_i \not\equiv p_j (mod~m)$</p>
 <p><strong>证毕</strong></p>
 <p><strong>引理3 $p_i$ 与 $m$ 互质</strong></p>
 <p><strong>证明</strong></p>
 <p>写出他们的唯一分解式</p>
-<p>$$m&#x3D;P_1^{d_1}P_2^{d_2}…P_k^{d_k}$$</p>
-<p>$$a&#x3D;P_1^{f_1}P_2^{f_2}…P_k^{f_k}$$</p>
-<p>$$X_i&#x3D;P_1^{e_1}P_2^{e_2}…P_k^{e_k}$$</p>
-<p>$$p_i&#x3D;P_1^{e_1+d_1}P_2^{e_2+d_2}…P_k^{e_k+d_k}$$</p>
-<p>可知$\forall d_i \ne 0$,都有$e_i&#x3D;f_i&#x3D;0$,所以 $e_i+f_i&#x3D;0$</p>
+<script type="math/tex; mode=display">m=P_1^{d_1}P_2^{d_2}...P_k^{d_k}</script><script type="math/tex; mode=display">a=P_1^{f_1}P_2^{f_2}...P_k^{f_k}</script><script type="math/tex; mode=display">X_i=P_1^{e_1}P_2^{e_2}...P_k^{e_k}</script><script type="math/tex; mode=display">p_i=P_1^{e_1+d_1}P_2^{e_2+d_2}...P_k^{e_k+d_k}</script><p>可知$\forall d_i \ne 0$,都有$e_i=f_i=0$,所以 $e_i+f_i=0$</p>
 <p>所以$p_i$ 与 $m$ 互质</p>
 <p><strong>证毕</strong></p>
 <p>$\because a$ 与 $m$ 互质, $X_i$ 也与 $m$ 互质</p>
 <p>$\therefore aX_i$ 也与 $m$ 互质</p>
-<p>所以 $aX_i$ 模 $m$ 后一定是 $\phi(m)$ 个与 $m$ 互质的数, 即$X_1…X_{\phi(m)}$</p>
-<p>所以 $X_1X_2…X_{\phi(m)}\equiv aX_1aX_2…aX_{\phi(m)} (mod~m)$</p>
+<p>所以 $aX<em>i$ 模 $m$ 后一定是 $\phi(m)$ 个与 $m$ 互质的数, 即$X_1…X</em>{\phi(m)}$</p>
+<p>所以 $X<em>1X_2…X</em>{\phi(m)}\equiv aX<em>1aX_2…aX</em>{\phi(m)} (mod~m)$</p>
 <p>即$1\equiv a^{phi(m)} (mod~m)$</p>
-<p>###扩展欧拉定理</p>
-<p>$$a^c \equiv \begin{cases}a^{c<del>mod</del>\phi(m)},gcd(a,m)&#x3D;1\a^c,gcd(a,m)\ne 1,c&lt;\phi(m)\a^{c<del>mod</del>\phi(m)+\phi(m)},gcd(a,m)\ne 1,c \ge \phi(m) \end{cases}$$</p>
-<p>首先证明 $gcd(a,m)&#x3D;1$ 的情况,当 $m&#x3D;1$ 时,显然成立.当 $m \ne 1$ 时,因为 $a^{\phi(m)} \equiv 1 (mod<del>m)$,每 $\phi(n)$ 个数字就相当于乘了一个 $1$, 所以 $a^c \equiv a^{c</del>mod~\phi(m)}$</p>
+<h3 id="扩展欧拉定理"><a href="#扩展欧拉定理" class="headerlink" title="扩展欧拉定理"></a>扩展欧拉定理</h3><script type="math/tex; mode=display">a^c \equiv \begin{cases}a^{c~mod~\phi(m)},gcd(a,m)=1\\a^c,gcd(a,m)\ne 1,c<\phi(m)\\a^{c~mod~\phi(m)+\phi(m)},gcd(a,m)\ne 1,c \ge \phi(m) \end{cases}</script><p>首先证明 $gcd(a,m)=1$ 的情况,当 $m=1$ 时,显然成立.当 $m \ne 1$ 时,因为 $a^{\phi(m)} \equiv 1 (mod~m)$,每 $\phi(n)$ 个数字就相当于乘了一个 $1$, 所以 $a^c \equiv a^{c~mod~\phi(m)}$</p>
 <p>然后是 $gcd(a,m) \ne 1$, 若 $c &lt; \phi(m)$, 直接快速幂计算即可.</p>
 <p>接下来证明 $c \ge \phi(m)$ 的情况, 只需要 $a$ 的任意一个质因子满足即可</p>
-<p>考虑取 $a$ 的一个质因子 $p$, 令 $m &#x3D; t \times p^r,\gcd(t,p)&#x3D;1$</p>
+<p>考虑取 $a$ 的一个质因子 $p$, 令 $m = t \times p^r,\gcd(t,p)=1$</p>
 <p>显然 $r \le \phi(m)$, 证明如下：</p>
 <hr>
-<p>因为$\phi$是个积性函数,满足 $\phi(ab)&#x3D;\phi(a)\phi(b)$</p>
-<p>那么 $\phi(m)&#x3D;\phi(t) \times \phi(p^r) \ge phi(p^r),t&#x3D;1,2$ 时取等</p>
-<p>又有 $\phi(p^r)&#x3D;p^r-p^{r-1}&#x3D;(p-1) \times p^{r-1} \ge p^{r-1},p\ge 2,p&#x3D;2$ 时取等</p>
-<p>数学归纳法证明 $p^{r-1} \ge r$, 当 $r&#x3D;1$ 时成立, 假设 $r&#x3D;i$ 时 $p^{i-1} \ge i$成立, $p^{i}&#x3D;p \times p^{i-1} \ge 2 \times p^{i-1}&#x3D;p^{i-1}+p^{i-1} \ge p^{i-1}+1 \ge i+1$ 成立</p>
+<p>因为$\phi$是个积性函数,满足 $\phi(ab)=\phi(a)\phi(b)$</p>
+<p>那么 $\phi(m)=\phi(t) \times \phi(p^r) \ge phi(p^r),t=1,2$ 时取等</p>
+<p>又有 $\phi(p^r)=p^r-p^{r-1}=(p-1) \times p^{r-1} \ge p^{r-1},p\ge 2,p=2$ 时取等</p>
+<p>数学归纳法证明 $p^{r-1} \ge r$, 当 $r=1$ 时成立, 假设 $r=i$ 时 $p^{i-1} \ge i$成立, $p^{i}=p \times p^{i-1} \ge 2 \times p^{i-1}=p^{i-1}+p^{i-1} \ge p^{i-1}+1 \ge i+1$ 成立</p>
 <p>因此对于任意 $p,r \in Z, p \ge 2, r \ge 1$, 都有 $p^{r-1} \ge r$ 成立</p>
 <p>将不等式串起来, 得到 $r \le \phi(m)$</p>
 <hr>
 <p>显然 $p^{\phi(t)} \equiv 1 (mod~t)$,</p>
-<p>又因为 $\phi(m)&#x3D;\phi(t)\phi(p^r) \Rightarrow \phi(t)|\phi(m)$</p>
-<p>所以 $p^{\phi(m)}&#x3D;(p^{\phi(t)})^{\phi(p^r)} \equiv 1^{\phi(p^r)}&#x3D;1 (mod~t)$,根据同余的性质</p>
+<p>又因为 $\phi(m)=\phi(t)\phi(p^r) \Rightarrow \phi(t)|\phi(m)$</p>
+<p>所以 $p^{\phi(m)}=(p^{\phi(t)})^{\phi(p^r)} \equiv 1^{\phi(p^r)}=1 (mod~t)$,根据同余的性质</p>
 <p>两边同乘一个 $p^r \Rightarrow p^{\phi(m)+r}\equiv p^r (mod~m)$</p>
 <p>那么 $p^c \equiv p^{c-r+r} \equiv p^{c-r+\phi(m)+r} \equiv p^{\phi(m)+c} (mod~m)$</p>
-<p>可得 $p^c \equiv p^{k\phi(m)+c}(mod<del>m) \Rightarrow p^c \equiv p^{c</del>mod~\phi(m)+\phi(m)}$</p>
-<p>令 $f(x)&#x3D;p^x\mod~m(x\ge\phi(m))$</p>
-<p>将上式写成函数递推式可得 $f(x)&#x3D;f(x-\phi(m))$,函数定义域需满足 $x\ge\phi(m)$,即 $x\ge 2\phi(m)$ 时可使用此递推式,所以在模后面加个 $\phi(m)$</p>
-<p>考虑 $p^k$,$(p^k)^c &#x3D; p^ck \equiv p^{ck+k\phi(m)} \equiv (p^k)^{\phi(m)+c} \equiv (p^k)^{c<del>mod</del>\phi(m)+\phi(m)}(mod~m)$,成立</p>
-<p>令 $a&#x3D;\prod p_i^{k_i}$,根据同余的性质,$a^c \equiv a^{c<del>mod</del>\phi(m)+\phi(m)}$成立</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/">http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/10/01/%E9%A2%98%E8%A7%A3P3714%20%5BBJOI2017%5D%E6%A0%91%E7%9A%84%E9%9A%BE%E9%A2%98/" title="题解P3714 [BJOI2017]树的难题"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">题解P3714 [BJOI2017]树的难题</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/01/%E9%A2%98%E8%A7%A3%20CF906D%20Power%20Tower/" title="题解 CF906D Power Tower"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">题解 CF906D Power Tower</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="GJK算法">GJK算法</a><time datetime="2024-10-01T02:53:38.485Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="虚树DP">虚树DP</a><time datetime="2024-10-01T02:53:38.484Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="题解 平方和">题解 平方和</a><time datetime="2024-10-01T02:53:38.484Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="关于pb_ds库的一些使用">关于pb_ds库的一些使用</a><time datetime="2024-10-01T02:53:38.483Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="题解[SCOI2009]最长距离">题解[SCOI2009]最长距离</a><time datetime="2024-10-01T02:53:38.483Z" title="Created 2024-10-01 10:53:38">2024-10-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+<p>可得 $p^c \equiv p^{k\phi(m)+c}(mod~m) \Rightarrow p^c \equiv p^{c~mod~\phi(m)+\phi(m)}$</p>
+<p>令 $f(x)=p^x\mod~m(x\ge\phi(m))$</p>
+<p>将上式写成函数递推式可得 $f(x)=f(x-\phi(m))$,函数定义域需满足 $x\ge\phi(m)$,即 $x\ge 2\phi(m)$ 时可使用此递推式,所以在模后面加个 $\phi(m)$</p>
+<p>考虑 $p^k$,$(p^k)^c = p^ck \equiv p^{ck+k\phi(m)} \equiv (p^k)^{\phi(m)+c} \equiv (p^k)^{c~mod~\phi(m)+\phi(m)}(mod~m)$,成立</p>
+<p>令 $a=\prod p_i^{k_i}$,根据同余的性质,$a^c \equiv a^{c~mod~\phi(m)+\phi(m)}$成立</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Hhha</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/">http://example.com/2024/10/01/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%E5%8F%8A%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">BzhH</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/10/01/%E9%A2%98%E8%A7%A3P3714%20%5BBJOI2017%5D%E6%A0%91%E7%9A%84%E9%9A%BE%E9%A2%98/" title="题解P3714 [BJOI2017]树的难题"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">题解P3714 [BJOI2017]树的难题</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/01/%E9%A2%98%E8%A7%A3%20CF906D%20Power%20Tower/" title="题解 CF906D Power Tower"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">题解 CF906D Power Tower</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hhha</div><div class="author-info__description">形而上学，不行退学</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">98</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">欧拉定理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">扩展欧拉定理</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="GJK算法">GJK算法</a><time datetime="2024-10-01T02:53:38.485Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="虚树DP">虚树DP</a><time datetime="2024-10-01T02:53:38.484Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="题解 平方和">题解 平方和</a><time datetime="2024-10-01T02:53:38.484Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="关于pb_ds库的一些使用">关于pb_ds库的一些使用</a><time datetime="2024-10-01T02:53:38.483Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="题解[SCOI2009]最长距离">题解[SCOI2009]最长距离</a><time datetime="2024-10-01T02:53:38.483Z" title="发表于 2024-10-01 10:53:38">2024-10-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Hhha</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
