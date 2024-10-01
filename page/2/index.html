@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-10-01 10:11:44'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E5%B7%A6%E5%81%8F%E6%A0%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.198Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">在做一道题的时候遇到了就顺手学了
+罗马游戏
+刚开始打的线段树合并,结果空间直接炸裂,然后尝试玄学得了60分
+后面看标签才知道要用左偏树.
+左偏树满足下面几个性质
+1.根节点的 $val$ 小于儿子节点的 $val$
+2.左儿子到叶子结点的 $dis$ 大于等于右儿子的 $dis$
+3.根节点的 $dis$ 等于右儿子的 $dis + 1$ 
+以及一些其他关于树的大小的证明
+然后是左偏树的一些操作
+合并操作
+12345678910111213int merge(int x, int y)&#123;	if (!x || !y)		return x + y;	if (tr[x].v &gt; tr[y].v)		swap(x, y);	rs = merge(rs, y);	if (tr[ls].dis &lt; tr[rs].dis)		swap(ls, rs);	tr[ls].rt = tr[rs].rt = tr[x].rt = x;	tr[x].dis = tr[rs].dis + 1;	return x;&#125;
+让 $x$ 作为根节点, $y$ 连到 $x$ 的右儿子上面,如 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BNOIP2009%20%E6%99%AE%E5%8F%8A%E7%BB%84%5D%20%E9%81%93%E8%B7%AF%E6%B8%B8%E6%88%8F/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.196Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">感觉是一道很好的单调队列优化DP
+首先 $O(n^3)$ 的朴素DP很好想
+令 $f_i$ 表示前 $i$ 获得金币的最大值,不难的出状态转移方程
+$$f_i&#x3D;\max\limits_{1\le j\le p}(f_{i-k}-cost_{i-k}+val_{i-k-&gt;i})$$
+$val$ 的求法可以通过维护一个对角线上的前缀和,我们先将道路的权值转化为点的权值,
+即转化到道路终点上,为了方便,我们让工厂的编号从0开始,这样就可以通过取模直接表述出走之前的点
+这样就可以写出朴素版的DP
+1234for (int i = 1; i &lt;= m; i++)    for (int j = 0; j &lt; n; j++)         for (int k = 1; k &lt;= min(p, i); k++)             f[i] = max(f[i - k] + sum[i][j] - sum[i - k][j - k] - c[j - k], f[i]);  
+这到题到这里就已经可以AC了,但如何数据严格的话,$O(n^3)$ 肯定是不能过的, ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BNOIP2016%20%E6%8F%90%E9%AB%98%E7%BB%84%5D%20%E5%A4%A9%E5%A4%A9%E7%88%B1%E8%B7%91%E6%AD%A5/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.193Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">算是NOIP中比较麻烦的题了,看题解感觉处理的很巧妙
+题意就不再赘述了，刚开始的想法是遍历枚举每一条路径，但是无论如何这样做的复杂度最坏都有O(nm)
+所以尝试换一种方法,从观察员下手,对于每一个观察员,我们只需要找到每一条路径带给他的贡献
+那这个贡献怎么求呢?
+对于每一条路径(u,v),我们都可以将它拆为 u-&gt;lca 与 lca -&gt;v
+假设观察员的位置p在 u-&gt; lca 上,当depth[u]+w[p]&#x3D;depth[p]时才会有贡献
+而当p在 lca-&gt;v 上时,只有dist(u,v)-(depth[v]-depth[p])&#x3D;w[p],即dist(u,v)-depth[v]&#x3D;w[p]-depth[p]时才有贡献
+然后是统计贡献,如果我们在统计贡献时也一个一个去计算,那么复杂度就又上去了,所以这个时候可以用一个桶来处理,
+这也是这道题比较巧妙的一点,
+先看u-&gt;lca,对于点x,我们将它贡献的答案存在cnt[depth[x]]里,对于这条路径上的点p,更新答案就只需要加上cnt[depth[p]+w[p]]
+对于lca- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E8%8E%AB%E9%98%9F%E2%80%94%E2%80%94%E4%BC%98%E9%9B%85%E7%9A%84%E6%9A%B4%E5%8A%9B/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.192Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">暴力出奇迹,$n^2$ 过百万
+普通莫队[SDOI2009]HH的项链
+虽然这道题 $n$ 有 $10^6$ 但卡一卡还能过
+首先考虑最暴力的暴力,直接枚举就行了
+然后莫队是怎样去优化这个暴力的?
+先定义两个指针 $l,r$ 表示当前已经求出区间 $[l,r]$ 的答案,对于询问 $[L,R]$,
+实际上只需要移动 $l,r$ 即可,如果有一种办法能够使移动的次数最小,时间复杂度会不会降下来呢?
+莫队正是利用了这一点,考虑离线处理所有询问,对区间左端点分块,对于左端点在同一块中的两个询问,
+按照右端点编号排序,否则,按照左端点编号排序,这里有一个优化,奇偶性排序,就是奇数块升序排,偶数块降序排,
+对于一些大数据可能会有用.那么这么排为什么会快?
+先考虑左端点,左端点只会有两种移动方式,在块内移动与再两个块间移动
+块内移动的距离显然是不超过块的大小的,这里定义块的大小为 $\sqrt{n}$,一共 $m$ 此询问,那么时间复杂度就是 $O(m\sqrt{n})$
+在两个块之间移动,考虑最远距离 $2\sqrt{n}$,总时间复杂度也是 $O(m\sqrt{n})$ 的
+再考虑右端点,因为 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5B%E7%9C%81%E9%80%89%E8%81%94%E8%80%83%202020%20A%20%E5%8D%B7%5D%20%E4%BD%9C%E4%B8%9A%E9%A2%98/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.192Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">反演+矩阵树
+首先题目要求的是 $\sum\limits_{T}\sum\limits_{i&#x3D;1}^{n-1}w_{e_{i}}\times gcd(w_{e_1},…,w_{e_{n-1}})$
+很明显的可以用反演,也可以直接套 $\phi*1&#x3D;id$
+那么就可以得出 $\sum\limits_{d&#x3D;1}^{max(w)}\phi(d)\sum\limits_{T}^{d|(gcd(w_{e\in T}))}\sum\limits_{i&#x3D;1}^{n-1}w_{e_i}$
+后面部分需要用到矩阵树定理,但矩阵树求得是 $\sum\limits_T\prod\limits_{i&#x3D;1}^{n-1}w_{e_i}$,和上面的不一样,所以需要稍作转换
+考虑将边权用一个一次函数 $wx+1$ 表示,在模 $x^2$ 下作乘法,那么你会发现一次项系数就是边权和
+所以不妨定义一个多项式四则运算,加减直接对应加减就行了
+乘法 $(ax+b)(cx+d)&#x3D;(ad+bc)x+bd$
+除法,考虑 $(cx+d)$ 的逆元,即我们需要求 $(Ax+B) ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86(Matrix-tree%20Theorem)/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.191Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">矩阵树定理就是把图的生成树个数与矩阵行列式联系起来的一个定理
+前置知识矩阵行列式
+定义假设有一个无向图 $G&#x3D;(V,E)$ 有 $p$ 个顶点 $q$ 条边
+对于 $G$ 中每一条边,我们任意指定一个方向,这样我们就可以定义 $G$ 的关联矩阵 $M(G)$, 它是一个 $p\times q$ 的矩阵
+$$M_{ij}&#x3D;\begin{cases}-1&amp;v_i是e_i的起点\1&amp;v_i是e_i的终点\0&amp;otherwise\end{cases}$$
+然后定义基尔霍夫矩阵 $L(G)$, 它是一个 $p\times p$ 的矩阵
+$$L_{ij}&#x3D;\begin{cases}-m_{ij}&amp;i\ne j,v_i与v_j之间有m_{ij}条边\d(v_i)&amp;i&#x3D;j\end{cases}$$
+$d(i)$ 为点 $i$ 的度数,可以看出 $M$ 与指定的边的方向有关,而 $L$ 无光
+几条引理引理1$MM^T&#x3D;L$
+证明
+$(MM^T){ij}&#x3D;\sum\limits{e_k\in E}M_{ik ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSHOI2016%5D%E9%BB%91%E6%9A%97%E5%89%8D%E7%9A%84%E5%B9%BB%E6%83%B3%E4%B9%A1/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.191Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">矩阵树定理+容斥
+题意给定 $n-1$ 个集合 $S$,第 $i$ 个集合里包含 $m_i$ 条边,你需要从这 $n-1$ 个集合里各选一条边,构成一棵树,问一共有多少种方案
+题解很明显题目所求的方案个数就是生成树个数，那么就可以用矩阵树定理来做
+但题目又给了限制，即每个集合里只能选一条边,这个用矩阵树定理就没法做了
+考虑容斥,令 $f(A)$ 表示集合 $A$ 中的边能够构成的生成树数量, $g(i)$ 表示从集合 $S$ 中任意 $i$ 个不同集合的并集
+那么答案就等于 $\sum\limits_{i&#x3D;0}^{n-1}(-1)^if(g(n-1-i))$
+说人话就是 $n-1$ 个集合构成的无向图的生成树数量 $- (n-2)$ 个集合构成的生成树数量 $+(n-3)$ 个集合构成的生成树数量 …
+考虑 $n$ 比较小,直接搜索就行
+代码
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)---%E7%9F%A9%E9%98%B5/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.190Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">矩阵是什么定义由 $m\times n$  个数按一定的次序排成的 $m$ 行 $n$ 列的矩形数表称为 $m\times n$ 的矩阵,简称矩阵
+$$\begin{pmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}\end{pmatrix}$$
+横的各排称为矩阵的行,竖的各排称为矩阵的列。
+$a_{i~j}$ 称为矩阵第 $i$ 行第 $j$ 列的元素
+表示矩阵通常用大写字母A,B,C表示,如
+$$A&#x3D;\begin{pmatrix}a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}\end{pmatrix}$$
+简记为 $A&#x3D;(a_{i~j})_{m\times n}$
+几种特殊 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3P3164%20%5BCQOI2014%5D%E5%92%8C%E8%B0%90%E7%9F%A9%E9%98%B5/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.189Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">很明显是一道高斯消元解线性异或方程组。
+对于一个 $n\times m$ 的矩阵,我们给每个点编一个号,
+对于第 $i$行,第 $j$ 列的点,则有 $p&#x3D;(i-1)\times m+j$。
+那么与它相邻的点的编号就出来了,
+分别是 $p_1&#x3D;p-m,p_2&#x3D;p+m,p_3&#x3D;p-1,p_4&#x3D;p+1$。
+那么对于每一个点,我们都可以列出一个方程式
+$$x_p\oplus x_{p_1}\oplus x_{p_2}\oplus x_{p_3}\oplus x_{p_4}&#x3D;0$$
+那么 $n\times m$ 的矩阵就一共有 $nm$ 个点,即我们需要列出一个 $nm$ 元一次方程式组,
+那这个方程组求出来的解就一定是答案吗?
+不是,很明显,矩阵全部都为0也是这个方程组的一组合法解,
+但题目又说了不能全为0,并且保证有解,那么就说明这个方程组并不是唯一解,
+所以在跑完高斯消元后,对于那些自由元,我们全部赋值为1,这样就能求出答案了。
+还有一个问题,这样做的时间复杂度是 $O((nm)^3)$ 的,
+所以需要用bitset优化一下,就 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%E5%A4%8D%E4%B9%A0/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.189Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">很久之前学过这个东西，但因为一直没有用过就忘记了，写篇博客复习了一下
+例题高斯消元解线性方程组
+给定义个 $n$ 元一次方程组,求出它的解
+我们将方程组的系数矩阵表示出来,那么就是
+$$\begin{vmatrix}a_{1,1}a_{1,2}…a_{1,n} b_1\a_{2,1}a_{2,2}…a_{2,n}b_2\\vdots~~~\ddots~~~\vdots\a_{n,1}a_{n,2}…a_{n,n}~b_n\\end{vmatrix}$$
+对于这个矩阵,我们可以进行下面几种操作
+1.把某一行乘以一个非0的数
+2.交换某两行
+3.把某一行的若干倍加到另一行上
+高斯消元则是通过这些操作,将一个系数矩阵变成三角形的形状
+首先枚举每一列
+1.找到每一行中绝对值最大的系数
+2.交换到最上面
+3.将该行第一个系数变为1
+4.将下面行该列的系数消为0
+最后就可以得到一个三角形的形状,求解就一次代入就行
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/#content-inner">10</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.204Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.203Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.202Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.202Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.201Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">94</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">95</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-10-01T02:11:44.669Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

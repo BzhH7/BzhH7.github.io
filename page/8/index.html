@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-10-01 10:11:44'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E5%B9%B3%E8%A1%A1%E6%A0%91%E6%A8%A1%E6%9D%BF/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.154Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">例题P3369 【模板】普通平衡树
+概念：   平衡树是二叉搜索树和堆合并构成的数据结构，它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。
+性质：对于每一个节点，满足它大于左儿子里的每一个节点，小于右儿子的每一个节点,即树的中序遍历为有序序列
+对于一个平衡树，它可以支持的操作有1:插入一个值2:删除一个值3:查询一个 $x$ 的排名4:查询排名为 $x$ 的值5:查询严格小于 $x$ 的最大值6:查询严格大于 $x$ 的最小值
+时间复杂度:不论哪一种操作，所花的时间都和树的高度成正比。因此，如果共有n个元素，
+那么平均每次操作需要 $O(logn)$ 的时间,所以我们要尽量让这棵树随机.
+那么对于每一个节点,我们可以这样定义
+12345struct tr&#123;       int l, r;    int siz, cnt, val, key;&#125; tree[N];
+$l,r$ 为树的左右儿子的编号,$siz$ 为这棵子树的节点个数,$val$ 为一个随机值,$key$ 是维护的值, $cnt$ 为当前值的个数
+通过$val, ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20UVA323%20%E3%80%90Jury%20Compromise%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.154Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">读完题,很容易想到这是一道背包问题 ,但就是做不来,可以看到,方案既与差值有关,又跟和有关,那么可以考虑根据差值或和来考虑状态,可以考虑$f[i][j][k]$表示前$i$个人选了$j$个人并且差值为$k$的和最大的方案
+那么状态该如何转移呢?
+考虑第$i$个人选或不选
+若不选第$i$个人
+很明显$f[i][j][k]&#x3D;f[i-1][j][k])$
+若选第$i$个人
+第$i$个人的差值已经定了,那么前$i$个人的差值就是$k-(p[i]-d[i])$
+可以得出$f[i][j][k]&#x3D;max(f[i][j][k],f[i-1][j-1[k-(p[i]-d[i])])$
+从题目中可以看出,差值的范围$\left [-400,400 \right]$那么可以直接枚举所有差值转移即可
+解决了第一小问,接下来就是输出方案,可以考虑把每个状态从哪一个状态转移存起来,可以通过判断$f[i][j][k]$与$f[i-1][j][k]$的关系,若相等,则说明可以不选$i$,若不等,则说明$i$一定被选
+代码如下
+123456789101112131415161718192021222 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20P4046%20%E3%80%90%5BJSOI2010%5D%E5%BF%AB%E9%80%92%E6%9C%8D%E5%8A%A1%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.153Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">这道题其实和SP703 SERVICE - Mobile Service一样
+看到这到题,很容易想到一种定义状态的方式$f[i][x][y][z]$表示完成前$i$个请求,三个人的位置分别在$x,y,z$,但很明显如果这么定义会超空间,所以想办法减掉一位,因为完成请求必须要有一个人在请求发生的位置,那么,我们就可以用当前完成的第$i$个请求来推出其中一个人的位置,所一这个状态就可变成$f[i][x][y]$,b表示完成前$i$个请求时,其中两个人分别在$x,y$,接下来考虑怎么转移状态,如果我们从前面的状态来推当前的状态,需要考虑许多种情况,所以我们就用当前状态来更新下一个状态
+
+然后是状态转移方程，因为有三个员工,那么我们可以考虑,下面三种情况
+在当前请求的位置的人去
+$f[i + 1][x][y] &#x3D; min(f[i + 1][x][y], f[i][x][y] + c[p[i]][p[i+1]])$
+在$x$位置的员工去
+$f[i + 1][p[i]][y] &#x3D; min(f[i + 1][p[i]][y], f[i][x][y]+c[x][p[i + 1]]) ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20P3698%20%E3%80%90%5BCQOI2017%5D%E5%B0%8FQ%E7%9A%84%E6%A3%8B%E7%9B%98%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.152Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">看到这道题，很容易想到是一道树型DP，那么该如何做？
+首先我们可以先这样定义状态，$f_{i,j}$表示以$i$为根节点,向下走$j$步最多能经过多少点,但很明显,只是这样是不行的,所以我们再加一维,第三维为0表示不会到根节点,第三维为1表示需要回到根节点,那么就可以得出状态转移方程
+$\begin{cases}f_{i,j,0}&#x3D;max(f_{i,j-t,0}+f_{v,t-2,1},f_{i,j-t,1}+f_{v,t-1,0})\f_{i,j,1}&#x3D;max(f_{i,j-t,1}+f_{v,t-2,1})\end{cases}$
+(其中$i$表示父节点,$j$表示一共走了多少步,$v$表示儿子节点,$t$表示儿子节点向下走多少步)
+注意到这里面为什么要减一个1或2,因为向下走如果要回来,那么就还需要经过2次父亲与儿子之间的边,如果不会来,就只需要经过一次.
+那么代码就很容易得出
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849#in ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20SP703%20%E3%80%90SERVICE%20-%20Mobile%20Service%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.152Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">看到这到题,很容易想到一种定义状态的方式$f[i][x][y][z]$表示完成前$i$个请求,三个人的位置分别在$x,y,z$,但很明显如果这么定义会超空间,所以想办法减掉一位,因为完成请求必须要有一个人在请求发生的位置,那么,我们就可以用当前完成的第$i$个请求来推出其中一个人的位置,所一这个状态就可变成$f[i][x][y]$,b表示完成前$i$个请求时,其中两个人分别在$x,y$,接下来考虑怎么转移状态,如果我们从前面的状态来推当前的状态,需要考虑许多种情况,所以我们就用当前状态来更新下一个状态
+
+然后是状态转移方程，因为有三个员工,那么我们可以考虑,
+在当前请求的位置的人去
+$f[i + 1][x][y] &#x3D; min(f[i + 1][x][y], f[i][x][y] + c[p[i]][p[i+1]])$
+在$x$位置的员工去
+$f[i + 1][p[i]][y] &#x3D; min(f[i + 1][p[i]][y], f[i][x][y]+c[x][p[i + 1]])$
+在$y$位置的员工去
+$f[i + 1][x][p[i]] &#x3D; min(f[ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20P4544%20%E3%80%90%5BUSACO10NOV%5DBuying%20Feed%20G%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.151Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">看完这到题，很容易想到用背包做，即设状态$f_{i,j}$表示前$i$个商店一共带了$j$吨货的最小花费,只需要先把商店的位置排个序,就可以直接枚举了,那么就可以得到状态转移方程
+$\begin{cases} f_{i,j}&#x3D;f_{i-1,j}+jj(X_i-X_{i-1}),u&#x3D;0\ f_{i,j}&#x3D; \underset{0\le j\le k,1\le u\le F_i}{min}(f_{i,j-u}+u*C_i) \end{cases}$
+第一层循环枚举当前走到第$i$商店，第二层循环枚举当前一共运了$j$吨货物,第三层循环枚举在当前商店购买$u吨货物$,那么我们就可以$O(n^3)$实现这个算法,很明显是会超时的,所以想办法优化,(通过查看标签),很明显可以看到,$f_{i,j}$只跟之前的$f_{i,j-u}$有关,同时每个$u$需满足$u+F_i&gt;&#x3D;j$,所以可以考虑单调队列来优化,那么时间复杂度就会降为$O(n^2)$,具体细节看代码
+1234567891011121314151617181920212223242526272 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20CF126B%20%E3%80%90Password%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.150Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">第一遍读完这道题，这不就是个裸的KMP板子吗，然后迅速打出了KMP，发现并过不了样例2，于是又仔细读了一下题，发现读漏了一个条件，即需要在中间也出现过，因为我们知道,KMP中的next数组存的是相同的前缀和后缀的长度,那么只需要找在中间出现过前缀长度,并标记一下就行了,最后在匹配的时候多判断一下。
+详见代码
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546#include&lt;iostream&gt;#include&lt;cstdio&gt;using namespace std;const int N = 1e6 + 5;string s;int net[N], num[N];bool is[N];int main()&#123;    cin &gt;&gt; s;    for (int i = 1, j = 0; s[i]; i++)    &#123;        while (j &amp;&amp; s[i] != s[j])             ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20P4924%20%E3%80%90%5B1007%5D%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%B0%8FScarlet%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.150Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">这道题直接模拟就可以做出来了。
+首先是顺时针旋转90°部分如图一个3*3的矩阵
+
+
+
+1
+2
+3
+
+
+
+4
+5
+6
+
+
+7
+8
+9
+
+
+顺时针旋转过后
+
+
+
+7
+4
+1
+
+
+
+8
+5
+2
+
+
+9
+6
+3
+
+
+由此可以看出
+
+
+
+
+第a行数字与第a列数字有关系
+
+
+
+
+所以可以得出以下代码
+
+
+
+
+123456789101112131415161718void spin(int x,int y,int r)&#123;	for(int i=x-r;i&lt;=x+r;i++)	&#123;		for(int k=y-r;k&lt;=y+r;k++)			temp[i][k]=square[i][k];	&#125;//将以（x,y)为中心的(2r+1）*（2r+1）的矩阵赋给temp	int x1=x+r,y1=y-r;	for(int i=x-r;i&lt;=x+r;i++)	&#123;		for(int k=y-r;k&lt;=y+r;k++)		&#123;			square[i][k]=temp[x1][y1];//将某一列的数字赋值给某一列			x1--;		&#125;		 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20P1056%20%E3%80%90%E6%8E%92%E5%BA%A7%E6%A4%85%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.149Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">这道题稍微思考一下就可以做出来由题可知，每行每列可以隔开的同学不会重复，所以只要将每行每列可以隔开的同学的对数统计出来，再从大到小排序，最后输出即可。
+代码如下
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455#include&lt;iostream&gt;#include&lt;algorithm&gt;using namespace std;int ans_row[2005],ans_cul[2005];//储存每行每列可以隔开的同学struct pos_row&#123;	int x1 time;&#125;row[2005];//储存坐标以及隔开的同学struct pos_cul&#123;	int y1 time;&#125;cul[2005];//同上bool cmp1(pos_row a,pos_row b)&#123;	return a.time&gt;b.time;&#125;//从大到小排序bool cmp2(po ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E6%A8%A1%E6%9D%BF%20%20%20%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.148Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">
+                    
+                        
+                    
+                    快速排序（升序） 
+void qsort(int l,int r,int a[])
+&#123;
+	int l1=l,l2=r;
+	int mid=a[(l+r)/2];//找到中间的数
+	do
+	&#123;
+		while(a[l1]&lt;mid)	l1++;//找到不符合要求的数，退出
+		while(a[l2]&gt;mid)	l2--;
+		if(l1&lt;l2)//交换
+		&#123;
+			swap(a[l1],a[l2]);
+			l1++;l2--;
+		&#125;
+	&#125;while(l1&lt;l2);
+	if(l1&lt;r)	qsort(l1,r,a);
+	if(l2&gt;l)	qsort(l,l2,a);//继续排序
+&#125;
+ 
+归并排序（升序） 
+void mosrt(int l,int r,int a[])
+&#123;
+	int temp[10000];
+	 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/7/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/#content-inner">9</a><a class="page-number" href="/page/10/#content-inner">10</a><a class="extend next" rel="next" href="/page/9/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.204Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.203Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.202Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.202Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.201Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">94</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">95</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-10-01T02:11:44.669Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/6/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-10-01 10:11:44'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/MillerRabin%E6%A6%82%E7%8E%87%E6%B5%8B%E7%B4%A0%E6%95%B0%E6%B3%95%E4%B8%8EPollard-Rho%E7%AE%97%E6%B3%95/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.167Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">例题Pollard-Rho算法
+要求的是一个数的最大质因子，常规做法肯定是过不了的这个数据范围的
+##MillerRabin概率测素数法
+根据两个定理
+费马小定理:若$p$为质数,$a^{p-1}\equiv 1 \pmod{p}$
+二次检查定理:若$p$为质数,$x^2 \equiv 0 \pmod{p}$的解为$x_1&#x3D;1,x_2&#x3D;p-1$
+有了这两个定理,就可以开始MillerRabin算法了
+通过费马小定理可知,如果一个数满足费马小定理,那么这个数很可能为素数,并不是一定.
+对于一个素数 $p , p-1$ 一定是偶数,那么不妨设 $p-1&#x3D;m \times 2^q$
+那么我们就可以通过一个数 $a^m$ 不断自乘得到下面这个序列
+$a^{m \times 2},a^{m \times 2^2},…,a^{m \times 2^q}$
+若该序列的数全部通过二次检查,那么这个数就很大概率是素数了
+通过前人智慧,我们知道每通过一次检查,那么$p$不是素数的概率为$\frac{1}{4}$,
+那么经过这一系列的检查,$p$不是素数的概率就近乎为0了
+通过 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3P1772%20%5BZJOI2006%5D%E7%89%A9%E6%B5%81%E8%BF%90%E8%BE%93/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.167Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">P1772 [ZJOI2006]物流运输
+看完这道题，很容易想到需要用最短路，但是只用最短路显然是不行的，因为运输路线不止一条，
+所以如果每一天都选择最短的路线答案可能并不是最优，所以这时候就需要考虑DP，
+刚开始我想的是用状态压缩把所有可能的路线算出来，但很快就被我否决了，因为时间复杂度显然超了，所以考虑其他方法
+观察样例得出，有可能一段时间内的最短路是一样的，所以考虑定义一个数组$dis_{i,j}$表示第$i$天到第$j$天都可以走的最短的路线,
+然后就可以定义状态$f_i$表示前$i$天的最短花费,考虑将n天划分成若干段进行转移即可
+得出状态转移方程$f_i&#x3D;\min\limits_{0\le j &lt;i}f_j+(i-j) * (dis_{j+1,i})+k$
+代码
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3CF1077F2%20Pictures%20with%20Kittens%20(hard%20version)/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.166Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">CF1077F2 Pictures with Kittens (hard version)题解里好像没有和我做法一样的 (指状态不一样)，那我就来发一篇，定义状态$f_{i,j}$表示当前选了$i$个数字,在第$j$个数字时的和的最大值那么很容易可以想出转移方程$f_{i,j}&#x3D;\max\limits_{0\le u&lt;j}\limits^{1\le i \le x,0\le j\le n}f_{i-1,u}+a_j$
+很显然直接$O(n^3)$转移是不行的,只能过24个点,别问我为什么知道,那么就可以考虑优化,去掉一维,仔细观察发现似乎可以用单调队列优化第三维,那么就可以用$O(n^2)$成功转移了代码
+1234567891011121314151617181920212223242526272829303132333435363738394041424344#include&lt;iostream&gt;#include&lt;cstdio&gt;#include&lt;cstring&gt;using namespace std;const int N = 5005 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3P3153%20%5BCQOI2009%5D%E8%B7%B3%E8%88%9E/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.166Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">读完这到题，感觉上像是一道二分图匹配得问题，但是它对于每一个点又有一些限制，所以可以考虑拆点，将男生和女生都拆成两个点，并连一条容量为k的边
+对于一对相互喜欢的男女，在男l与女r之间连一条容量为1的边，如果不喜欢那么就在男r与女l之间连一条容量为1的边，枚举可以有和舞曲数量m，在S与男l，女r与T之间连一条容量为m的边，如果该流网络存在满流的最大流，那么这个答案就是合法的，因为此题答案并不大，所以可以直接枚举
+代码
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112#include&lt;iostream&gt;#include&lt;cstdio&gt;#include&lt;cstr ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3CF149D%20Coloring%20Brackets/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.165Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">CF149D Coloring Brackets一道很有意思的区间DP我们用0表示不染色,1表示红色,2表示蓝色定义状态$f_{i,j,k,u}$表示将合法序列[i,j]染色且$i染为k,j染为u$的方案数那么序列就可以分为三种情况1°:()$f_{i,j,0,1}&#x3D;f_{i,f,1,0}&#x3D;f_{i,j,0,2}&#x3D;f_{i,j,2,0}$2°:((…))$f_{i,j,0,k}&#x3D;\sum\limits_{u&#x3D;0}^{u \le 2} \sum\limits_{v&#x3D;0}^{v \le 2,v \ne k}f_{i+1,j-1,u,v}$$f_{i,j,k,0}&#x3D;\sum\limits_{u&#x3D;0}^{u \le 2,u \ne k} \sum\limits_{v&#x3D;0}^{v \le 2}f_{i+1,j-1,u,v}$3°:(…)(…)用$l,rr,ll,r$分别表示上面括号的位置$f_{l,r,u,v}&#x3D;\sum\limits_{a&#x3D;0}^{a \le 2} \sum\limit ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3P3354%20%5BIOI2005%5DRiv%20%E6%B2%B3%E6%B5%81/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.165Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">P3354 [IOI2005]Riv 河流这是一道比较好的树型DP，在参考了网上的一些题解后，蒟蒻终于把它给做了出来可以看到这道题如果只用二维表示状态明显是不够的所以设状态$f_{i,j,k}$表示$i$为根节点,$j$为它的一个建有伐木场的父节点,$k$为$i$与它的子树共建的伐木场的数量考虑再开一个数组$g_{i,j,k}$表示$i$这个点建了伐木场,状态含义同$f$
+状态转移方程结合代码讲解
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960#include&lt;iostream&gt;#include&lt;cstdio&gt;#include&lt;cstring&gt;using namespace std;const int N = 105, M = 205;int n, k, siz[N], f[N][N][N], g[N][N][N], sum[N], stk[N];int head[N], ve ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3P4056%20%5BJSOI2009%5D%E7%81%AB%E6%98%9F%E8%97%8F%E5%AE%9D%E5%9B%BE/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.164Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">P4056 [JSOI2009]火星藏宝图这道题很容易想到$O(n^2)$的暴力做法,但仔细思考一下,可以发现对于每一列的可转移的岛,行数大的一定比行数小的更优.
+不妨假设这两个岛的坐标为$(x_1,y),(x_2,y)(x_1 &lt; x_2 \le x)$,当前的岛的坐标为$(x,y)$
+$\because (x_1-x_2)^2+(x_2-x)^2 - (x_1-x)^2$
+$&#x3D;2x_2^2-2x_1x_2-2xx_2+2xx_1&#x3D;2(x_2-x_1)(x_2-x)&lt;0$
+$\therefore (x_1-x_2)^2+(x_2-x)^2 &lt; (x_1-x)^2$
+即选择经过第二个岛的花费一定小于不选择经过第二个岛
+那么我们就可以再开一个数组把每一列可以转移的岛的最大行数用数组$st[k]$存下来
+对于状态转移方程,我们不妨假设当前岛的坐标为(i,j),定义状态$f_{i,j}$为走到$(i,j)$的最小花费,那么只需要用$O(m^3)$枚举横坐标k即可求出答案
+观察转移方程$f_{i,j}&#x3D;f_{st[k],k}+(i-st[k])^ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E7%BD%91%E7%BB%9C%E6%B5%81/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.163Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">12345678910111213141516171819202122232425262728293031321. 基本概念    1.1 流网络，不考虑反向边    1.2 可行流，不考虑反向边        1.2.1 两个条件：容量限制、流量守恒        1.2.2 可行流的流量指从源点流出的流量 - 流入源点的流量        1.2.3 最大流是指最大可行流    1.3 残留网络，考虑反向边，残留网络的可行流f&#x27; + 原图的可行流f = 原题的另一个可行流        (1) |f&#x27; + f| = |f&#x27;| + |f|        (2) |f&#x27;| 可能是负数    1.4 增广路径    1.5 割        1.5.1 割的定义        1.5.2 割的容量，不考虑反向边，“最小割”是指容量最小的割。        1.5.3 割的流量，考虑反向边，f(S, T) &lt;= c(S, T)        1.5.4 对于任意可行流f，任意割[S, T]，|f| = f(S, T)        1.5.5  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3P4567%20%5BAHOI2006%5D%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.163Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">这道题和P4008 【[NOI2003] 文本编辑器】其实是差不多的,只是tm的有一些坑
+比如样例
+1234567891011121310Insert 13Balanced eertMove 2Delete 5NextInsert 7editorMove 0GetMove 11Rotate 4Get
+
+其实是
+1editor\n
+
+还有输出字符的时候可能是\n,这时就不需要再输出换行符
+真的有毒这道题
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20P4008%20%E3%80%90%5BNOI2003%5D%20%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E3%80%91/" title="Untitled">Untitled</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T02:06:31.162Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></span></div><div class="content">一道简单的数据结构题,直接用splay做即可
+对于每一个操作Move:直接修改光标位置Insert:将光标所指的位置旋到根,再将它的后继旋到它下面,直接将序列插入为它的左儿子Dlete:将光标所指的位置旋到根,再将光标加n所指的位置旋到它下面,并将它的左儿子直接赋值为0Get:将光标所指的位置旋到根,再将光标加n所指的位置旋到它下面,输出它的左儿子Prev:光标位置减1Next:光标位置加1
+代码
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210310410510610710810911011111211311411511611711811912012112212312412512612712812913013113213313413513 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/5/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/#content-inner">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/#content-inner">10</a><a class="extend next" rel="next" href="/page/7/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/GJK%E7%AE%97%E6%B3%95/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.204Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%20%E5%B9%B3%E6%96%B9%E5%92%8C/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.203Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E8%99%9A%E6%A0%91DP/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.202Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E9%A2%98%E8%A7%A3%5BSCOI2009%5D%E6%9C%80%E9%95%BF%E8%B7%9D%E7%A6%BB/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.202Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/01/%E5%85%B3%E4%BA%8Epb_ds%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8/" title="Untitled">Untitled</a><time datetime="2024-10-01T02:06:31.201Z" title="Created 2024-10-01 10:06:31">2024-10-01</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">94</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">95</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-10-01T02:11:44.669Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
