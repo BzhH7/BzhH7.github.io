@@ -161,7 +161,7 @@
 首先考虑暴力做法,对于S1的每一个字符,我们都一该字符开始往后与S2对比.时间复杂度为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><br>
 很明显这并不是我们想要的,所以考虑优化,仔细观察一下,其实我们不用每个字符都去枚举一遍<br>
 如图<br>
-<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103091221231-1888270093.png" alt><br>
+<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103091221231-1888270093.png" alt=""><br>
 我们假设图中绿色区域的字符串相等,那么当第i个字符匹配完时,对于第i+1个字符,我们不需要去枚举所有字符,因为我们可以知道,<br>
 图中绿色区域时已经匹配好了的,所以我们就只需要从绿色区域以后开始匹配就行了.<br>
 那么我们就可以设一个next数组,表示以第i个字符终点,相同的前缀和后缀的最大长度为多少<br>
@@ -169,7 +169,7 @@
 那么next[0]=1,next[1]=1,next[2]=1<br>
 注意不能包括自己本身,因为这样的话存的东西就没有了意义,一直都是它本身的长度<br>
 那么在匹配的时候对于第i个字符,如果相等,那么已经匹配好的长度就加1,如果不等,就开始往回跳<br>
-<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103092253985-700407556.png" alt><br>
+<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103092253985-700407556.png" alt=""><br>
 我们每次就往会跳,知道目前匹配的字符与第i个字符相等,这就是匹配的过程,对于求next的过程,其实也差不多,可以看成两个S2在做匹配<br>
 code</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 1e6 + 5;</span><br><span class="line"></span><br><span class="line">string p, s;</span><br><span class="line">int net[N], ans[N], cnt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    cin &gt;&gt; s &gt;&gt; p;</span><br><span class="line">    int n = p.length(), m = s.length();</span><br><span class="line">    for (int i = 1, j = 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        while (j &amp;&amp; p[i] != p[j])</span><br><span class="line">            j = net[j - 1];</span><br><span class="line">        if (p[i] == p[j])</span><br><span class="line">            j++;</span><br><span class="line">        net[i] = j;</span><br><span class="line">    &#125;</span><br><span class="line">    for (int i = 0, j = 0; i &lt; m; i++)</span><br><span class="line">    &#123; </span><br><span class="line">        while (j &amp;&amp; s[i] != p[j])</span><br><span class="line">            j = net[j - 1];</span><br><span class="line">        if (s[i] == p[j])</span><br><span class="line">            j++;</span><br><span class="line">        if (j == n)</span><br><span class="line">        &#123;</span><br><span class="line">            cout &lt;&lt; i - n + 2 &lt;&lt; endl;</span><br><span class="line">            j = net[j - 1];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for (int i = 0; i &lt; n; i++)</span><br><span class="line">        cout &lt;&lt; net[i] &lt;&lt; &quot; &quot;;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -182,7 +182,7 @@ code</p>
 那么z[0]=5,z[1]=4,z[2]=3,z[3]=2,z[4]=1<br>
 考虑暴力做法,对于每一个字符,同样是往后遍历一边,复杂度为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><br>
 那么如何用这个z数组来优化这个算法?<br>
-<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103095317162-1480186107.png" alt><br>
+<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103095317162-1480186107.png" alt=""><br>
 我们假设字符串[L,R]是我们之前已经求出的R最大的前缀那么对于S2, 下标就为[0,R-L],那么这个时候就要分两种情况讨论了,若i&gt;R,<br>
 那么说明我们无法利用前面已知的信息,只能暴力匹配,若i&lt;=R,那么我们就可以知道以第i个字符为起点的前缀的初始长度应为min(R-i+1,z[i-L]).<br>
 如果说z[i-L]是大于R-i+1的,那么对于R之后的字符,我们任需暴力匹配,但总时间复杂度任为O(n).这点可以证明,在这里不过多解释<br>
@@ -196,7 +196,7 @@ KMP保证一个字符串时为线性,那么对于多个字符串,就需要AC自�
 那么答案为3<br>
 AC自动机是KMP与trie树的结合<br>
 如样例,首先建trie树<br>
-<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103105305608-1118150973.png" alt><br>
+<img src="https://img2020.cnblogs.com/blog/2153725/202101/2153725-20210103105305608-1118150973.png" alt=""><br>
 其中有绿色标记的代表单词结尾<br>
 其思想其实和KMP差不多,只是改成了在树上跳而已<br>
 代码</p>
